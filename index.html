@@ -10,10 +10,15 @@
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Fira+Code:wght@400;500&display=swap" rel="stylesheet">
     <!-- Font Awesome -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <!-- AOS Animation Library -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <!-- Custom CSS -->
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
+    <!-- Particles Background -->
+    <div id="particles-js"></div>
+
     <!-- Navbar -->
     <nav class="navbar" id="navbar">
         <div class="container">
@@ -44,7 +49,7 @@
     <!-- Hero Section -->
     <section id="home" class="hero">
         <div class="container">
-            <div class="hero-content">
+            <div class="hero-content" data-aos="fade-right" data-aos-duration="1000">
                 <span class="hero-greeting">Hello, I'm</span>
                 <h1 class="hero-name">Munaga Sai Krishna</h1>
                 <h2 class="hero-title">I'm a <span class="typing-text" id="typing-text"></span><span class="cursor">|</span></h2>
@@ -54,15 +59,15 @@
                     into reality through code. Let's build something amazing together!
                 </p>
                 <div class="hero-buttons">
-                    <a href="#projects" class="btn btn-primary">
+                    <a href="#projects" class="btn btn-primary" data-aos="fade-up" data-aos-delay="200">
                         <i class="fas fa-eye"></i> View Projects
                     </a>
-                    <a href="images/SAI.CV.pdf" download class="btn btn-secondary">
+                    <a href="images/SAI.CV.pdf" download class="btn btn-secondary" data-aos="fade-up" data-aos-delay="300">
                         <i class="fas fa-download"></i> Download Resume
                     </a>
                 </div>
-                <div class="social-links">
-                    <a href="https://github.com/saikrishnamunaga" target="_blank" aria-label="GitHub">
+                <div class="social-links" data-aos="fade-up" data-aos-delay="400">
+                    <a href="https://github.com/saikrishnamunga" target="_blank" aria-label="GitHub">
                         <i class="fab fa-github"></i>
                     </a>
                     <a href="https://www.linkedin.com/in/saikrishna10/" target="_blank" aria-label="LinkedIn">
@@ -76,7 +81,7 @@
                     </a>
                 </div>
             </div>
-            <div class="hero-image">
+            <div class="hero-image" data-aos="fade-left" data-aos-duration="1000">
                 <div class="image-wrapper">
                     <img src="images/ChatGPT Image Mar 10, 2026, 08_26_56 PM.png" alt="Munaga Sai Krishna">
                 </div>
@@ -87,28 +92,27 @@
     <!-- About Section -->
     <section id="about" class="about">
         <div class="container">
-            <h2 class="section-title">About Me</h2>
+            <h2 class="section-title" data-aos="fade-up">About Me</h2>
             <div class="about-content">
-                </div>
-                <div class="about-text fade-in">
+                <div class="about-text" data-aos="fade-up" data-aos-delay="200">
                     <h3>Computer Science Student & Software Developer</h3>
                     <p>A motivated Computer Science student with strong interest in software development and problem solving. Hands-on experience in Python, Java, and modern web technologies, with a focus on building practical and scalable applications.</p>
                     <p>Project experience includes developing AI-powered chatbots, healthcare systems, task management applications, and interactive web platforms. Familiarity with Django and Django REST Framework for building secure backend systems with REST APIs, JWT authentication, and role-based access control.</p>
                     <p>Strong enthusiasm for Artificial Intelligence, Machine Learning, and modern software technologies, with continuous focus on improving programming, analytical, and technical skills.</p>
                     <div class="about-details">
-                        <div class="detail-item">
+                        <div class="detail-item" data-aos="fade-up" data-aos-delay="100">
                             <i class="fas fa-envelope"></i>
-                            <span>mmunagasaikrishnagmail.com</span>
+                            <span>mmunagasaikrishna@gmail.com</span>
                         </div>
-                        <div class="detail-item">
+                        <div class="detail-item" data-aos="fade-up" data-aos-delay="150">
                             <i class="fas fa-map-marker-alt"></i>
                             <span>India</span>
                         </div>
-                        <div class="detail-item">
+                        <div class="detail-item" data-aos="fade-up" data-aos-delay="200">
                             <i class="fas fa-phone"></i>
                             <span>8688962952</span>
                         </div>
-                        <div class="detail-item">
+                        <div class="detail-item" data-aos="fade-up" data-aos-delay="250">
                             <i class="fas fa-code"></i>
                             <span>Developer</span>
                         </div>
@@ -121,86 +125,86 @@
     <!-- Skills Section -->
     <section id="skills" class="skills">
         <div class="container">
-            <h2 class="section-title">My Skills</h2>
-            <p class="section-subtitle">Technologies and tools I work with</p>
+            <h2 class="section-title" data-aos="fade-up">My Skills</h2>
+            <p class="section-subtitle" data-aos="fade-up" data-aos-delay="100">Technologies and tools I work with</p>
             
             <!-- Languages -->
-            <div class="skill-category">
+            <div class="skill-category" data-aos="fade-up">
                 <h3 class="category-title"><i class="fas fa-code"></i> Languages</h3>
                 <div class="skill-tags">
-                    <span class="skill-tag fade-in"><i class="fab fa-python"></i> Python</span>
-                    <span class="skill-tag fade-in"><i class="fas fa-database"></i> SQL</span>
-                    <span class="skill-tag fade-in"><i class="fab fa-js"></i> JavaScript</span>
-                    <span class="skill-tag fade-in"><i class="fas fa-code"></i> C</span>
-                    <span class="skill-tag fade-in"><i class="fas fa-code"></i> C++</span>
-                    <span class="skill-tag fade-in"><i class="fab fa-java"></i> Java</span>
+                    <span class="skill-tag" data-aos="fade-up" data-aos-delay="50"><i class="fab fa-python"></i> Python</span>
+                    <span class="skill-tag" data-aos="fade-up" data-aos-delay="100"><i class="fas fa-database"></i> SQL</span>
+                    <span class="skill-tag" data-aos="fade-up" data-aos-delay="150"><i class="fab fa-js"></i> JavaScript</span>
+                    <span class="skill-tag" data-aos="fade-up" data-aos-delay="200"><i class="fas fa-code"></i> C</span>
+                    <span class="skill-tag" data-aos="fade-up" data-aos-delay="250"><i class="fas fa-code"></i> C++</span>
+                    <span class="skill-tag" data-aos="fade-up" data-aos-delay="300"><i class="fab fa-java"></i> Java</span>
                 </div>
             </div>
 
             <!-- Libraries & Analysis -->
-            <div class="skill-category">
+            <div class="skill-category" data-aos="fade-up">
                 <h3 class="category-title"><i class="fas fa-chart-line"></i> Libraries & Analysis</h3>
                 <div class="skill-tags">
-                    <span class="skill-tag fade-in"><i class="fab fa-python"></i> Pandas</span>
-                    <span class="skill-tag fade-in"><i class="fab fa-python"></i> NumPy</span>
-                    <span class="skill-tag fade-in"><i class="fas fa-chart-bar"></i> Matplotlib</span>
-                    <span class="skill-tag fade-in"><i class="fas fa-chart-area"></i> Seaborn</span>
+                    <span class="skill-tag" data-aos="fade-up" data-aos-delay="50"><i class="fab fa-python"></i> Pandas</span>
+                    <span class="skill-tag" data-aos="fade-up" data-aos-delay="100"><i class="fab fa-python"></i> NumPy</span>
+                    <span class="skill-tag" data-aos="fade-up" data-aos-delay="150"><i class="fas fa-chart-bar"></i> Matplotlib</span>
+                    <span class="skill-tag" data-aos="fade-up" data-aos-delay="200"><i class="fas fa-chart-area"></i> Seaborn</span>
                 </div>
             </div>
 
             <!-- Databases -->
-            <div class="skill-category">
+            <div class="skill-category" data-aos="fade-up">
                 <h3 class="category-title"><i class="fas fa-server"></i> Databases</h3>
                 <div class="skill-tags">
-                    <span class="skill-tag fade-in"><i class="fas fa-database"></i> MySQL</span>
-                    <span class="skill-tag fade-in"><i class="fas fa-table"></i> Relational Databases</span>
+                    <span class="skill-tag" data-aos="fade-up" data-aos-delay="50"><i class="fas fa-database"></i> MySQL</span>
+                    <span class="skill-tag" data-aos="fade-up" data-aos-delay="100"><i class="fas fa-table"></i> Relational Databases</span>
                 </div>
             </div>
 
             <!-- Tools & Platforms -->
-            <div class="skill-category">
+            <div class="skill-category" data-aos="fade-up">
                 <h3 class="category-title"><i class="fas fa-tools"></i> Tools & Platforms</h3>
                 <div class="skill-tags">
-                    <span class="skill-tag fade-in"><i class="fab fa-git-alt"></i> Git</span>
-                    <span class="skill-tag fade-in"><i class="fab fa-github"></i> GitHub</span>
-                    <span class="skill-tag fade-in"><i class="fas fa-notebook"></i> Jupyter Notebook</span>
-                    <span class="skill-tag fade-in"><i class="fas fa-snake"></i> Anaconda</span>
-                    <span class="skill-tag fade-in"><i class="fas fa-file-excel"></i> Excel (Advanced)</span>
+                    <span class="skill-tag" data-aos="fade-up" data-aos-delay="50"><i class="fab fa-git-alt"></i> Git</span>
+                    <span class="skill-tag" data-aos="fade-up" data-aos-delay="100"><i class="fab fa-github"></i> GitHub</span>
+                    <span class="skill-tag" data-aos="fade-up" data-aos-delay="150"><i class="fas fa-notebook"></i> Jupyter Notebook</span>
+                    <span class="skill-tag" data-aos="fade-up" data-aos-delay="200"><i class="fas fa-snake"></i> Anaconda</span>
+                    <span class="skill-tag" data-aos="fade-up" data-aos-delay="250"><i class="fas fa-file-excel"></i> Excel (Advanced)</span>
                 </div>
             </div>
 
             <!-- Frameworks & Web -->
-            <div class="skill-category">
+            <div class="skill-category" data-aos="fade-up">
                 <h3 class="category-title"><i class="fas fa-globe"></i> Frameworks & Web</h3>
                 <div class="skill-tags">
-                    <span class="skill-tag fade-in"><i class="fab fa-html5"></i> HTML5</span>
-                    <span class="skill-tag fade-in"><i class="fab fa-css3-alt"></i> CSS3</span>
-                    <span class="skill-tag fade-in"><i class="fas fa-rocket"></i> Streamlit</span>
-                    <span class="skill-tag fade-in"><i class="fas fa-mobile-alt"></i> Responsive Web Design</span>
-                    <span class="skill-tag fade-in"><i class="fab fa-python"></i> Django</span>
+                    <span class="skill-tag" data-aos="fade-up" data-aos-delay="50"><i class="fab fa-html5"></i> HTML5</span>
+                    <span class="skill-tag" data-aos="fade-up" data-aos-delay="100"><i class="fab fa-css3-alt"></i> CSS3</span>
+                    <span class="skill-tag" data-aos="fade-up" data-aos-delay="150"><i class="fas fa-rocket"></i> Streamlit</span>
+                    <span class="skill-tag" data-aos="fade-up" data-aos-delay="200"><i class="fas fa-mobile-alt"></i> Responsive Web Design</span>
+                    <span class="skill-tag" data-aos="fade-up" data-aos-delay="250"><i class="fab fa-python"></i> Django</span>
                 </div>
             </div>
 
             <!-- Core Concepts -->
-            <div class="skill-category">
+            <div class="skill-category" data-aos="fade-up">
                 <h3 class="category-title"><i class="fas fa-lightbulb"></i> Core Concepts</h3>
                 <div class="skill-tags">
-                    <span class="skill-tag fade-in"><i class="fas fa-broom"></i> Data Cleaning and Preprocessing</span>
-                    <span class="skill-tag fade-in"><i class="fas fa-search"></i> EDA</span>
-                    <span class="skill-tag fade-in"><i class="fas fa-cogs"></i> Feature Engineering</span>
-                    <span class="skill-tag fade-in"><i class="fas fa-chart-pie"></i> Data Visualization</span>
+                    <span class="skill-tag" data-aos="fade-up" data-aos-delay="50"><i class="fas fa-broom"></i> Data Cleaning and Preprocessing</span>
+                    <span class="skill-tag" data-aos="fade-up" data-aos-delay="100"><i class="fas fa-search"></i> EDA</span>
+                    <span class="skill-tag" data-aos="fade-up" data-aos-delay="150"><i class="fas fa-cogs"></i> Feature Engineering</span>
+                    <span class="skill-tag" data-aos="fade-up" data-aos-delay="200"><i class="fas fa-chart-pie"></i> Data Visualization</span>
                 </div>
             </div>
 
             <!-- Soft Skills -->
-            <div class="skill-category">
+            <div class="skill-category" data-aos="fade-up">
                 <h3 class="category-title"><i class="fas fa-users"></i> Soft Skills</h3>
                 <div class="skill-tags">
-                    <span class="skill-tag soft-skill fade-in"><i class="fas fa-handshake"></i> Collaboration</span>
-                    <span class="skill-tag soft-skill fade-in"><i class="fas fa-sync-alt"></i> Adaptability</span>
-                    <span class="skill-tag soft-skill fade-in"><i class="fas fa-clock"></i> Time Management</span>
-                    <span class="skill-tag soft-skill fade-in"><i class="fas fa-comments"></i> Communication</span>
-                    <span class="skill-tag soft-skill fade-in"><i class="fas fa-puzzle-piece"></i> Problem Solving</span>
+                    <span class="skill-tag soft-skill" data-aos="fade-up" data-aos-delay="50"><i class="fas fa-handshake"></i> Collaboration</span>
+                    <span class="skill-tag soft-skill" data-aos="fade-up" data-aos-delay="100"><i class="fas fa-sync-alt"></i> Adaptability</span>
+                    <span class="skill-tag soft-skill" data-aos="fade-up" data-aos-delay="150"><i class="fas fa-clock"></i> Time Management</span>
+                    <span class="skill-tag soft-skill" data-aos="fade-up" data-aos-delay="200"><i class="fas fa-comments"></i> Communication</span>
+                    <span class="skill-tag soft-skill" data-aos="fade-up" data-aos-delay="250"><i class="fas fa-puzzle-piece"></i> Problem Solving</span>
                 </div>
             </div>
         </div>
@@ -209,10 +213,10 @@
     <!-- Projects Section -->
     <section id="projects" class="projects">
         <div class="container">
-            <h2 class="section-title">My Projects</h2>
-            <p class="section-subtitle">Check out my GitHub projects</p>
+            <h2 class="section-title" data-aos="fade-up">My Projects</h2>
+            <p class="section-subtitle" data-aos="fade-up" data-aos-delay="100">Check out my GitHub projects</p>
             <div class="projects-grid">
-                <div class="project-card fade-in">
+                <div class="project-card" data-aos="fade-up" data-aos-delay="100">
                     <div class="project-image">
                         <img src="images/Fitness.png" alt="Health Fitness React App">
                         <div class="project-overlay">
@@ -234,7 +238,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="project-card fade-in">
+                <div class="project-card" data-aos="fade-up" data-aos-delay="200">
                     <div class="project-image">
                         <img src="images/Task.jpg" alt="Task Manager">
                         <div class="project-overlay">
@@ -254,7 +258,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="project-card fade-in">
+                <div class="project-card" data-aos="fade-up" data-aos-delay="300">
                     <div class="project-image">
                         <img src="images/chatbot.png" alt="Chatbot Based on API">
                         <div class="project-overlay">
@@ -275,7 +279,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="project-card fade-in">
+                <div class="project-card" data-aos="fade-up" data-aos-delay="100">
                     <div class="project-image">
                         <img src="images/H.png" alt="Hospital Management System">
                         <div class="project-overlay">
@@ -297,7 +301,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="project-card fade-in">
+                <div class="project-card" data-aos="fade-up" data-aos-delay="200">
                     <div class="project-image">
                         <img src="images/Gemini_Generated_Image_hmyd7qhmyd7qhmyd (1).png" alt="Learning Management System">
                         <div class="project-overlay">
@@ -319,7 +323,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="project-card fade-in">
+                <div class="project-card" data-aos="fade-up" data-aos-delay="300">
                     <div class="project-image">
                         <img src="images/Calc.png" alt="Scientific Calculator">
                         <div class="project-overlay">
@@ -346,20 +350,30 @@
     <!-- Certificates Section -->
     <section id="certificates" class="certificates">
         <div class="container">
-            <h2 class="section-title">Certificates</h2>
-            <p class="section-subtitle">Professional certifications and achievements</p>
-            <div class="certificates-grid">
-                <div class="certificate-card fade-in">
+            <h2 class="section-title" data-aos="fade-up">Certificates</h2>
+            <p class="section-subtitle" data-aos="fade-up" data-aos-delay="100">Professional certifications and achievements</p>
+<div class="certificates-grid">
+                <!-- Oracle -->
+                <div class="certificate-item" data-image="images/oracle.png" data-aos="fade-up" data-aos-delay="100">
                     <div class="certificate-icon">
-                        <i class="fas fa-cloud"></i>
+                        <i class="fas fa-database"></i>
                     </div>
                     <div class="certificate-info">
-                        <h3>Oracle Data Platform 2025 Certified Foundations Associate</h3>
+                        <h3>Oracle Data Platform Associate</h3>
                         <p class="certificate-issuer">Oracle</p>
                         <span class="certificate-date">Mar 2026</span>
                     </div>
+                    <div class="cert-preview-small">
+                        <img src="images/oracle.png" alt="Oracle Certificate Preview" loading="lazy">
+                    </div>
+                    <div class="cert-overlay">
+                        <button class="cert-view-btn" data-image="images/oracle.png">
+                            <i class="fas fa-eye"></i> View Certificate
+                        </button>
+                    </div>
                 </div>
-                <div class="certificate-card fade-in">
+<!-- NPTEL Cloud -->
+                <div class="certificate-item" data-image="images/nptel.png" data-aos="fade-up" data-aos-delay="150">
                     <div class="certificate-icon">
                         <i class="fas fa-cloud"></i>
                     </div>
@@ -368,48 +382,83 @@
                         <p class="certificate-issuer">NPTEL</p>
                         <span class="certificate-date">Oct 2025</span>
                     </div>
+                    <div class="cert-preview-small">
+                        <img src="images/nptel.png" alt="NPTEL Certificate Preview" loading="lazy">
+                    </div>
+                    <div class="cert-overlay">
+                        <button class="cert-view-btn" data-image="images/nptel.png">
+                            <i class="fas fa-eye"></i> View Certificate
+                        </button>
+                    </div>
                 </div>
-                <div class="certificate-card fade-in">
+<!-- Infosys AI -->
+                <div class="certificate-item" data-image="images/infosys.png" data-aos="fade-up" data-aos-delay="200">
                     <div class="certificate-icon">
                         <i class="fas fa-robot"></i>
                     </div>
                     <div class="certificate-info">
-                        <h3>Build Generative AI Apps & Solutions</h3>
+                        <h3>Generative AI Apps & Solutions</h3>
                         <p class="certificate-issuer">Infosys Springboard</p>
                         <span class="certificate-date">Aug 2025</span>
                     </div>
+                    <div class="cert-preview-small">
+                        <img src="images/infosys.png" alt="Infosys Certificate Preview" loading="lazy">
+                    </div>
+                    <div class="cert-overlay">
+                        <button class="cert-view-btn" data-image="images/infosys.png">
+                            <i class="fas fa-eye"></i> View Certificate
+                        </button>
+                    </div>
                 </div>
-                <div class="certificate-card fade-in">
+<!-- Python Django -->
+                <div class="certificate-item" data-image="images/python dijango.png" data-aos="fade-up" data-aos-delay="250">
                     <div class="certificate-icon">
                         <i class="fab fa-python"></i>
                     </div>
                     <div class="certificate-info">
-                        <h3>Python Django For Beginners</h3>
-                        <p class="certificate-issuer">Certificate</p>
+                        <h3>Python Django for Beginners</h3>
+                        <p class="certificate-issuer">Online Certification</p>
                         <span class="certificate-date">Feb 2024</span>
                     </div>
+                    <div class="cert-preview-small">
+                        <img src="images/python dijango.png" alt="Django Certificate Preview" loading="lazy">
+                    </div>
+                    <div class="cert-overlay">
+                        <button class="cert-view-btn" data-image="images/python dijango.png">
+                            <i class="fas fa-eye"></i> View Certificate
+                        </button>
+                    </div>
                 </div>
-                <div class="certificate-card fade-in">
+<!-- FreeCodeCamp -->
+                <div class="certificate-item" data-image="images/freecodecamp.png" data-aos="fade-up" data-aos-delay="300">
                     <div class="certificate-icon">
                         <i class="fas fa-certificate"></i>
                     </div>
                     <div class="certificate-info">
                         <h3>Responsive Web Design</h3>
-                        <p class="certificate-issuer">FreeCodeCamp</p>
+                        <p class="certificate-issuer">freeCodeCamp</p>
                         <span class="certificate-date">Oct 2023</span>
                     </div>
+                    <div class="cert-preview-small">
+                        <img src="images/freecodecamp.png" alt="freeCodeCamp Certificate Preview" loading="lazy">
+                    </div>
+                    <div class="cert-overlay">
+                        <button class="cert-view-btn" data-image="images/freecodecamp.png">
+                            <i class="fas fa-eye"></i> View Certificate
+                        </button>
+                    </div>
                 </div>
-            </div>
+                
         </div>
     </section>
 
     <!-- Education Section -->
     <section id="education" class="education">
         <div class="container">
-            <h2 class="section-title">Education</h2>
-            <p class="section-subtitle">Academic background and qualifications</p>
+            <h2 class="section-title" data-aos="fade-up">Education</h2>
+            <p class="section-subtitle" data-aos="fade-up" data-aos-delay="100">Academic background and qualifications</p>
             <div class="education-timeline">
-                <div class="education-item fade-in">
+                <div class="education-item" data-aos="fade-up" data-aos-delay="100">
                     <div class="education-dot"></div>
                     <div class="education-content">
                         <h3>Bachelor of Technology - Computer Science & Engineering</h3>
@@ -420,7 +469,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="education-item fade-in">
+                <div class="education-item" data-aos="fade-up" data-aos-delay="200">
                     <div class="education-dot"></div>
                     <div class="education-content">
                         <h3>Intermediate Education</h3>
@@ -431,7 +480,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="education-item fade-in">
+                <div class="education-item" data-aos="fade-up" data-aos-delay="300">
                     <div class="education-dot"></div>
                     <div class="education-content">
                         <h3>Secondary School (SSC)</h3>
@@ -449,9 +498,9 @@
     <!-- Resume Section -->
     <section id="resume" class="resume">
         <div class="container">
-            <h2 class="section-title">Resume</h2>
-            <p class="section-subtitle">Download my resume to learn more about my experience</p>
-            <div class="resume-content fade-in">
+            <h2 class="section-title" data-aos="fade-up">Resume</h2>
+            <p class="section-subtitle" data-aos="fade-up" data-aos-delay="100">Download my resume to learn more about my experience</p>
+            <div class="resume-content" data-aos="fade-up" data-aos-delay="200">
                 <div class="resume-icon">
                     <i class="fas fa-file-alt"></i>
                 </div>
@@ -461,9 +510,14 @@
                     Passionate software developer with expertise in Python, Java, C, C++, HTML, CSS, and JavaScript. 
                     Strong foundation in data structures, algorithms, and software development principles.
                 </p>
-                <a href="images/SAI.CV.pdf" download class="btn btn-primary">
-                    <i class="fas fa-download"></i> Download Resume
-                </a>
+                <div class="resume-buttons">
+                    <a href="images/SAI.CV.pdf" target="_blank" class="btn btn-primary" data-aos="fade-up" data-aos-delay="200">
+                        <i class="fas fa-eye"></i> View Resume
+                    </a>
+                    <a href="images/SAI.CV.pdf" download class="btn btn-secondary" data-aos="fade-up" data-aos-delay="300">
+                        <i class="fas fa-download"></i> Download Resume
+                    </a>
+                </div>
             </div>
         </div>
     </section>
@@ -471,40 +525,40 @@
     <!-- Contact Section -->
     <section id="contact" class="contact">
         <div class="container">
-            <h2 class="section-title">Get In Touch</h2>
-            <p class="section-subtitle">Feel free to contact me for any project or collaboration</p>
+            <h2 class="section-title" data-aos="fade-up">Get In Touch</h2>
+            <p class="section-subtitle" data-aos="fade-up" data-aos-delay="100">Feel free to contact me for any project or collaboration</p>
             <div class="contact-content">
-                <div class="contact-info fade-in">
-                    <div class="contact-item">
+                <div class="contact-info" data-aos="fade-right">
+                    <div class="contact-item" data-aos="fade-up" data-aos-delay="100">
                         <i class="fas fa-envelope"></i>
                         <div>
                             <h4>Email</h4>
                             <p>mmunagasaikrishna@gmail.com</p>
                         </div>
                     </div>
-                    <div class="contact-item">
+                    <div class="contact-item" data-aos="fade-up" data-aos-delay="200">
                         <i class="fas fa-phone"></i>
                         <div>
                             <h4>Phone</h4>
                             <p>8688962952</p>
                         </div>
                     </div>
-                    <div class="contact-item">
+                    <div class="contact-item" data-aos="fade-up" data-aos-delay="300">
                         <i class="fas fa-map-marker-alt"></i>
                         <div>
                             <h4>Location</h4>
                             <p>India</p>
                         </div>
                     </div>
-                    <div class="contact-item">
+                    <div class="contact-item" data-aos="fade-up" data-aos-delay="400">
                         <i class="fab fa-github"></i>
                         <div>
                             <h4>GitHub</h4>
-                            <p>saikrishnamunaga</p>
+                            <p>saikrishnamunga</p>
                         </div>
                     </div>
                 </div>
-                <form class="contact-form fade-in" id="contact-form" action="https://api.web3forms.com/submit" method="POST">
+                <form class="contact-form" data-aos="fade-left" data-aos-delay="200" id="contact-form" action="https://api.web3forms.com/submit" method="POST">
                     <input type="hidden" name="access_key" value="77a87df8-1ff8-445f-b285-b77812e493cc">
                     <input type="hidden" name="subject" value="New Contact Form Submission - Portfolio">
                     <input type="hidden" name="from_name" value="Portfolio Website">
@@ -538,7 +592,7 @@
         <div class="container">
             <div class="footer-content">
                 <div class="footer-social">
-                    <a href="https://github.com/saikrishnamunaga" target="_blank" aria-label="GitHub">
+                    <a href="https://github.com/saikrishnamunga" target="_blank" aria-label="GitHub">
                         <i class="fab fa-github"></i>
                     </a>
                     <a href="https://www.linkedin.com/in/saikrishna10/" target="_blank" aria-label="LinkedIn">
@@ -561,9 +615,13 @@
         </div>
     </footer>
 
-    <!-- Custom Script -->
+    <!-- AOS JS -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <!-- Particles JS -->
+    <script src="https://cdn.jsdelivr.net/npm/particles.js@2.0.0/particles.min.js"></script>
+    <!-- Web3Forms -->
     <script src="https://web3forms.com/client/script.js" async defer></script>
+    <!-- Custom Script -->
     <script src="script.js"></script>
 </body>
 </html>
-
